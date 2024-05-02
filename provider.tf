@@ -7,7 +7,7 @@ terraform {
   }
 }
 
- cloud {
+backend "remote" {
     organization = "thellapalli"
 
     workspaces {

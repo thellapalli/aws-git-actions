@@ -7,11 +7,15 @@ terraform {
   }
 }
 
+ cloud {
+    organization = "thellapalli"
 
+    workspaces {
+      name = "git-actions"
+    }
+  }
 provider "aws" {
   region = "us-east-1"
-#access_key  = "AKIAQKNWS24Q7QIB4OVM"
-#secret_key = "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"
 }
 
 
